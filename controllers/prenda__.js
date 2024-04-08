@@ -51,7 +51,7 @@ export const prendaPut = async (req, res) => {
 export const prendaDelete = async(req, res) => {
     try {
         const { id } = req.params;
-        const prendaDeleted = Prenda.findByIdAndDelete(id, req.body)
+        const prendaDeleted = Prenda.findByIdAndDelete(id)
         res.json({
             msg: 'Prenda borrada con éxito',
             infoPrenda: prendaDeleted// Devuelve un objeto JSON con un mensaje indicando que se está accediendo a la API con PUT
