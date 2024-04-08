@@ -36,7 +36,7 @@ export const prendaPut = async (req, res) => {
     try {
 
         const { id } = req.params;
-        const prendaUpdated = Prenda.findByIdAndUpdate(id, req.body)
+        const prendaUpdated = await Prenda.findByIdAndUpdate(id, req.body)
         res.json({
             msg: 'Prenda actualizada con éxito',
             infoPrenda: prendaUpdated// Devuelve un objeto JSON con un mensaje indicando que se está accediendo a la API con PUT
@@ -51,7 +51,7 @@ export const prendaPut = async (req, res) => {
 export const prendaDelete = async(req, res) => {
     try {
         const { id } = req.params;
-        const prendaDeleted = Prenda.findByIdAndDelete(id)
+        const prendaDeleted = await Prenda.findByIdAndDelete(id)
         res.json({
             msg: 'Prenda borrada con éxito',
             infoPrenda: prendaDeleted// Devuelve un objeto JSON con un mensaje indicando que se está accediendo a la API con PUT
