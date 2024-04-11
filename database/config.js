@@ -1,2 +1,2 @@
 import mongoose from 'mongoose'
-mongoose.connect("mongodb://patitodestructor:123456789pato@ac-i9xjbyp-shard-00-00.0nsjg8n.mongodb.net:27017,ac-i9xjbyp-shard-00-01.0nsjg8n.mongodb.net:27017,ac-i9xjbyp-shard-00-02.0nsjg8n.mongodb.net:27017/?ssl=true&replicaSet=atlas-ff7r3j-shard-0&authSource=admin&retryWrites=true&w=majority").then(()=>console.log('Conectado a mongo atlas')).catch(e=>console.error(e))
+mongoose.connect("mongodb+srv://emmvargas11:mimamamemima@clouster0.r4oaosy.mongodb.net/?retryWrites=true&w=majority&appName=Clouster0").then(()=>console.log('Conectado a mongo atlas')).catch(e=>console.error(e))
