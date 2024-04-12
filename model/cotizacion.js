@@ -1,3 +1,4 @@
+import { text } from 'express';
 import { Schema, model } from 'mongoose';
 
 // Define el esquema del modelo Cotizacion

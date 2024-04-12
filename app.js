@@ -1,6 +1,6 @@
 import express from 'express';
 import cotizacionRouter from './routes/cotizacion.js'; // Cambiamos la importación para usar el enrutador de cotización
-import './database/config.js'; // Mantenemos la configuración de la base de datos si es necesaria
+import './database/config.js'; 
 import cors from 'cors';
 
 const port = 3000;
